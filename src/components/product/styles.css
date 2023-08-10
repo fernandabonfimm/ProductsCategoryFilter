@@ -1,0 +1,40 @@
+.divCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.tagElemtn {
+  background-color: rgb(136, 240, 136);
+  border-radius: 1rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  transition: all 0.5s;
+  font-size: 15px;
+}
+
+.tagElemtnText {
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+  color: rgb(4, 80, 4);
+}
+.imageClass {
+  width: 250px;
+  height: 250px;
+  border-radius: 1rem;
+  transition: all 0.5s;
+}
+.textTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  color: #000000;
+}
+.descriptoText {
+  font-size: 0.5rem;
+  font-weight: 400;
+  text-align: center;
+  color: #535353;
+}
