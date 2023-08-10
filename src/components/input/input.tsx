@@ -1,5 +1,7 @@
 import React from "react";
 import InputProps from "../../interfaces/components/inputProps";
+import './styles.css'
+
 const Input: React.FC<InputProps> = ({
   label,
   name,
@@ -9,10 +11,10 @@ const Input: React.FC<InputProps> = ({
   onChange,
 }) => {
   return (
-    <div>
-      <label>{label}</label>
+    <div className="flexCol">
+      <label className="labelInput">{label}</label>
       <input
-        className="border-2 border-gray-400"
+        className="inputClass"
         name={name}
         type={type}
         placeholder={placeholder}

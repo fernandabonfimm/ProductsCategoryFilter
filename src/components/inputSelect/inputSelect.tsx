@@ -1,5 +1,6 @@
 import React from "react";
 import InputSelectProps from "../../interfaces/components/inputSelectProps";
+import './styles.css'
 
 const InputSelect: React.FC<InputSelectProps> = ({
   label,
@@ -9,10 +10,10 @@ const InputSelect: React.FC<InputSelectProps> = ({
   options,
 }) => {
   return (
-    <div className="flex flex-col gap-2">
-      <label>{label}</label>
+    <div className="flexCol">
+      <label className="labelInput">{label}</label>
       <select
-        className="border-2 border-gray-400"
+        className="inputClass"
         name={name}
         value={value}
         onChange={onChange}

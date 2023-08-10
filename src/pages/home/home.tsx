@@ -29,7 +29,22 @@ const Home: React.FC = () => {
 
   const startIndex = (currentPage - 1) * productsPerPage;
   const endIndex = startIndex + productsPerPage;
-  const currentProducts = products.slice(startIndex, endIndex);
+
+  let filteredProducts = products;
+
+  if (search.trim() !== "") {
+    filteredProducts = filteredProducts.filter((product) =>
+      product.name.toLowerCase().includes(search.toLowerCase())
+    );
+  }
+
+  if (select !== "") {
+    filteredProducts = filteredProducts.filter(
+      (product) => product.category.name === select
+    );
+  }
+
+  const currentProducts = filteredProducts.slice(startIndex, endIndex);
 
   return (
     <div className="divWrap">
